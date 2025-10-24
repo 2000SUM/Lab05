@@ -1,6 +1,6 @@
 ---
 title: "Lab 06 - Take a sad plot and make it better"
-author: "User1, User2, User3 and User4 - Team Name"
+author: "Individual Shayan"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -20,9 +20,7 @@ library(ggplot2)
 ```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/Speaking-the-world.jpg")
 ```
-
-_Write your comments about image 1 below_
-
+Image 1 seems mostly reasonable, the data is shown proportionally, with size of bars being proportional to number of speakers. The units of Chinese speakers being highlighted in red as it is billions is a mistake: there are 1026 million people, not 1026 billion. The graph is not cumbersome for the computer and does not seem to be deceiving towards people. On a closer look, some ratios do not seem proportional, with 272 and 380 million having too similar lengths, which could be a lack of attention towards mathematics or data.
 
 
 
@@ -33,9 +31,7 @@ _Write your comments about image 1 below_
 knitr::include_graphics("img/rose-pop-density-total-area-bw.jpg")
 ```
 
-_Write your comments about image 2 below_
-
-
+The image does not have any indication present to inform the viewer of the values being measured; it is unclear what the radius and the angle degrees occupied in the pie chart represent. The pie chart itself is not a very admirable one as it seems to be an attempt of exaggeration and does not present any real numbers as well as being difficult to understand. thus it can be considered a violation of the respect of people, mathematics and/or data.
 
 
 ## Image 3
@@ -44,8 +40,7 @@ _Write your comments about image 2 below_
 knitr::include_graphics("img/life-expectancy-rule-of-law.png")
 ```
 
-_Write your comments about image 3 below_
-
+This graph is quite cumbersome and large, with many overlaps which make it hard to understand and process for the viewers and computer. The colours may help when distinguishing what seems to be different countries, but it is unclear what exactly the x axis represents. The lack of numbering on the y axis (life expectancy) and the presence of unnecessary logos and awards make it a lack of respect of data and people. 
 
 
 
@@ -55,9 +50,8 @@ _Write your comments about image 3 below_
 knitr::include_graphics("img/global-income-dist.PNG")
 ```
 
-_Write your comments about image 4 below_
-
-
+The data is overall well represented, using colours to distinguish different regions ans using proper annotation and numbering.
+it provides an informative title and y axis as well as a source for the data, and is overall easy to comprehend both in meaning and purpose.
 
 
 
@@ -71,7 +65,7 @@ staff <- read_csv("data/instructional-staff.csv")
 ## Exercise 1
 
 What is the difference between *wide format* data and *long format* data?
-
+A long format contains a row for every different observation with variables along the top on the x axis. A wide format summarises all the observations by a certain variable, and puts the variables on the y axis.
 
 Is the format `staff` data *wide* or *long*?
 
